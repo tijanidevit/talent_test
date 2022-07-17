@@ -1,5 +1,5 @@
 # talent_test
 
-###Setup Guide
+### Setup Guide
 
-- - Please ensure docker is running before anything
+- Please ensure docker is running before anything
