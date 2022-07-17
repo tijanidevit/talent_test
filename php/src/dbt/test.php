@@ -29,6 +29,10 @@
     <h2>Test 3 - RIGTH JOIN</h2>
     <p>SELECT country,yr FROM games RIGTH JOIN city ON city.name = games.city</p>
     <small><strong>Right Join will fetch the records from the right table (city) and the matching records on the left table (games). If there is no matching records on the left table (games), it returns the records on the right table only. It can be expressed in set as <em>B u (AnB)</em>; A union (A intersects B)</strong></small>
+
+
+    <h2>Test 4 - Session</h2>
+    <p>SELECT userid, FLOOR (avg(duration)) AS AverageDuration FROM sessions GROUP BY userid HAVING COUNT(userid) > 1;</p>
     
                          
 </body>
