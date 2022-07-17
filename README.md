@@ -2,7 +2,7 @@
 
 ### Setup Guide
 
-- **Please ensure docker is running before anything**
+- **Please ensure docker is running and you have a good internet connection before anything**
 - Then build docker images by running the code below:
 
 ```
