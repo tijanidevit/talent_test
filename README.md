@@ -22,3 +22,5 @@ docker-compose up -d
 ```
 
 - Then open _localhost:8000_ in your browser
+
+### Please note that all code assumes all constraints are met. So, constraints were not checked
