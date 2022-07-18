@@ -37,7 +37,7 @@
                     array_push($scs, $score['score']);
                 }
                 sort($scs);
-                return $scs[2];
+                return $scs[ceil(count([$scs])/2)];
             }
             else{
                 return 0;
