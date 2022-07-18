@@ -20,13 +20,8 @@
         }
 
         function FetchStudentMeanScores($student_id){
-            $scores = $this->FetchStudentScoresSum($student_id);
-            if ($scores) {
-                return ceil($scores['score']/5);
-            }
-            else{
-                return 0;
-            }
+            $mean = DB::fetch("SELECT avg(score) as mean FROM student_scores WHERE student_id = ? ",[$student_id]);
+            return ceil($mean['mean']);
         }
 
         function FetchStudentMedianScores($student_id){

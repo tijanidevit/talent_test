@@ -8,6 +8,15 @@ function printResult($result): void{
         echo 0;
     }
   }
+
+  function printMean($result): void{
+    if ($result) {
+        echo $result['score'];
+    }
+    else{
+        echo 0;
+    }
+  }
 function response($success,$message,$data = null){
 	return json_encode(
 		[
